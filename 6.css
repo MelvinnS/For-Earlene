@@ -45,9 +45,10 @@ body {
   color: #333;
   padding: 30px 30px 30px 70px;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;              /* biar lebih enak di HP */
   max-width: 500px;
-  height: 600px;
+  min-height: 400px;       /* tinggi minimum */
+  max-height: 80vh;        /* tinggi maksimal sesuai layar */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   font-size: 1.1rem;
   line-height: 1.6;
@@ -56,8 +57,9 @@ body {
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: "Courier New", monospace;
-  overflow: visible;
+  overflow-y: auto;        /* biar bisa scroll kalau teks kepanjangan */
 }
+
 .letter p {
   margin-top: -55px;
   overflow: hidden;
