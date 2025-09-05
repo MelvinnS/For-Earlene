@@ -1,0 +1,202 @@
+/* Reset default style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0b6603, #000);
+    color: white;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info .profile-label {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.profile-info .profile-name {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.profile-info .dot {
+    color: white;
+}
+
+.profile-meta {
+    font-size: 14px;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+
+.follow-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.playlist-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.playlist-card {
+    width: 160px;
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.playlist-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.playlist-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.playlist-author {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+
+
+
+/* CSS PLAY */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4c0a0a, #000);
+    color: white;
+    padding: 20px;
+}
+
+.playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.left-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.playlist-cover {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.btn {
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.order-label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead th {
+    text-align: left;
+    font-weight: normal;
+    opacity: 0.7;
+    padding-bottom: 10px;
+}
+
+td, th {
+    padding: 10px 5px;
+}
+
+.song-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.song-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.artist {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.right {
+    text-align: right;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+
+

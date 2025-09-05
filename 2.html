@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="2.css" />
+</head>
+<body>
+
+<a href="javascript:history.back()" class="back-button">⬅ Kembali</a>
+    
+
+  <div class="container">
+    <img src="assets/bg2.png" alt="Background" class="bg" />
+    
+    <div class="overlay">
+      <img src="emang km gisel.png" alt="" class="heading-img" />
+      
+      <div class="login-box">
+        <h2>Kode Sandi</h2>
+        <form id="loginForm">
+          <label for="nickname">Nama panggilan</label>
+          <input type="text" id="nickname" name="nickname" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit"><span>🔒</span>Masuk</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Cegah reload
+
+      const nickname = document.getElementById("nickname").value.trim().toLowerCase();
+      const password = document.getElementById("password").value.trim();
+
+      if (nickname === "earlene" && password === "14062008") {
+        window.location.href = "3.html"; // arahkan ke halaman baru
+      } else {
+        alert("Nama atau Password yang kamu masukin salah, kamu bukan earlene ya?? udah ku bilang web ini cuma buat cewe imut");
+      }
+    });
+  </script>
+</body>
+</html>
+

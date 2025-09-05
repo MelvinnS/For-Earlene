@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulasi Notifikasi</title>
+  <link rel="stylesheet" href="5.css" />
+</head>
+<body>
+
+<a href="javascript:history.back()" class="back-button">⬅ Kembali</a>
+
+  
+  <!-- Notifikasi awal -->
+  <div class="notification" onclick="showAlert()">
+    <img src="assets/pp2.png" alt="foto" />
+    <div class="text">
+      <strong>Ellennn</strong>
+      <p>aku beneran minta maaf, tolong maafin aku ya?</p>
+    </div>
+    <span class="time">6:09 AM</span>
+  </div>
+
+  <!-- Alert Box (sembunyi dulu) -->
+  <div class="alert-box" id="alertBox">
+    <h3>ikhlas maafin aku ya?</h3>
+    <p>nanti aku beliin Apple Pie</p>
+    <div class="actions">
+      <a href="5.html">gmw</a>
+      <!-- <a href="#">Iyaa</a>  PAKE INI ATAU BWHNYA -->
+       <a href="6.html" onclick="window.location.href='giftMeme0.html'">mww</a>
+
+    </div>
+  </div>
+
+  <script>
+    function showAlert() {
+  const box = document.getElementById("alertBox");
+  box.classList.add("show");
+}
+
+    
+  
+
+
+  </script>
+</body>
+</html>

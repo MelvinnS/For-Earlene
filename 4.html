@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>maaf ❤️</title>
+  <link rel="stylesheet" href="4.css">
+</head>
+<body>
+  <h1>do u forgive me?
+    ellen?
+  </h1>
+  <div class="buttons">
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+
+    const noTexts = [
+      "are u sure?",
+      "bnrn gamau maafin aku?",
+      "Melvin sedi loo",
+      "he mengerikan"
+    ];
+
+    let noClickCount = 0;
+    let yesSize = 1;
+
+    noBtn.addEventListener("click", () => {
+      if (noClickCount < noTexts.length) {
+        noBtn.style.transform = `scale(${1 - (noClickCount + 1) * 0.2})`;
+        noBtn.textContent = noTexts[noClickCount];
+        yesSize += 0.3;
+        yesBtn.style.transform = `scale(${yesSize})`;
+        noClickCount++;
+      } else {
+        yesBtn.classList.add("fullscreen");
+        yesBtn.textContent = "YES 💖";
+        noBtn.style.display = "none";
+      }
+    });
+
+    yesBtn.addEventListener("click", () => {
+      // Redirect ke halaman profil kamu
+      window.location.href = "5.html"; 
+    });
+  </script>
+</body>
+</html>
